@@ -3,11 +3,10 @@
 /**
  * @Project NUKEVIET 4.x
  * @Author DANGDINHTU (dlinhvan@gmail.com)
- * @Copyright (C) 2013 Webdep24.com. All rights reserved
+ * @Copyright (C) 2013 Webdep24.com - dangdinhtu.com. All rights reserved
  * @License GNU/GPL version 2 or any later version
- * @Createdate  7, 23, 2013 4:41
+ * @Createdate  Wed, 21 Jan 2015 14:00:59 GMT
  */
- 
 
 if ( ! defined( 'NV_MAINFILE' ) ) die( 'Stop!!!' );
 
@@ -85,7 +84,19 @@ $lang_module['photo_error_delete'] = 'Không có slider nào được xoá';
 /*function photo*/
 
 
- $lang_module['template'] = 'Template';
+$lang_module['template'] = 'Template block';
+$lang_module['template_list']='Danh sách template block';
+$lang_module['template_add']='Thêm template';
+$lang_module['template_edit']='Sửa template';
+$lang_module['template_name']='Tên template';
+$lang_module['template_help']='Tên template chỉ gồm chữ và kí tự gạch chân, ví dụ: template_slider';
+$lang_module['template_status']='Trạng thái';
+$lang_module['template_date_added']='Ngày thêm';
+$lang_module['template_error_name']='Cảnh báo: Tên template không được để trống';
+$lang_module['template_error_warning']='Cảnh báo: Hãy kiểm tra các trường thông báo lỗi';
+$lang_module['template_error_save']='Cảnh báo: Không cập nhật được nội dung. Tên template có thể bị trùng';
+$lang_module['template_success_delete'] = 'Template đã được xoá thành công';
+$lang_module['template_error_delete'] = 'Không có template nào được xoá';
 /*function template*/
  
  

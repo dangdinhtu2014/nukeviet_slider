@@ -3,11 +3,10 @@
 /**
  * @Project NUKEVIET 4.x
  * @Author DANGDINHTU (dlinhvan@gmail.com)
- * @Copyright (C) 2013 Webdep24.com. All rights reserved
+ * @Copyright (C) 2013 Webdep24.com - dangdinhtu.com. All rights reserved
  * @License GNU/GPL version 2 or any later version
- * @Createdate  07, 23, 2013 4:41
+ * @Createdate  Wed, 21 Jan 2015 14:00:59 GMT
  */
-
 if( ! defined( 'NV_IS_FILE_MODULES' ) ) die( 'Stop!!!' );
 
 $sql_drop_module = array();
@@ -60,8 +59,9 @@ $sql_create_module[] = "CREATE TABLE " . $db_config['prefix'] . "_" . $lang . "_
 	name varchar(255) NOT NULL default '',
 	status tinyint(1) NOT NULL default '1',
 	date_added int(11) unsigned NOT NULL default '0',
-	date_modified int(11) unsigned NOT NULL default '0',
 	PRIMARY KEY (template_id),
 	UNIQUE KEY name (name)
 ) ENGINE=MyISAM"; 
+
+$sql_create_module[] = "INSERT INTO " . $db_config['prefix'] . "_" . $lang . "_" . $module_data . "_template VALUES(NULL, 'slider', 1, ". NV_CURRENTTIME .")"; 
  

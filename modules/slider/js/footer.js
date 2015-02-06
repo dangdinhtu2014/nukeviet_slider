@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+	 
 	$('[data-toggle=\'tooltip\']').tooltip({container: 'body', html: true});
  
 	$('button[type=\'submit\']').on('click', function() {

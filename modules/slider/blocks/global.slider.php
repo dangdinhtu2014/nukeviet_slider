@@ -3,9 +3,9 @@
 /**
  * @Project NUKEVIET 4.x
  * @Author DANGDINHTU (dlinhvan@gmail.com)
- * @Copyright (C) 2014 webdep24.com
+ * @Copyright (C) 2013 Webdep24.com - dangdinhtu.com. All rights reserved
  * @License GNU/GPL version 2 or any later version
- * @Createdate 24/06/2014 11:05
+ * @Createdate  Wed, 21 Jan 2015 14:00:59 GMT
  */
 
 if( ! defined( 'NV_MAINFILE' ) ) die( 'Stop!!!' );
