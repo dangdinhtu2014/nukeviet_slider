@@ -50,7 +50,7 @@ $sql_create_module[] = "CREATE TABLE " . $db_config['prefix'] . "_" . $lang . "_
 	date_added int(11) unsigned NOT NULL default '0',
 	date_modified int(11) unsigned NOT NULL default '0',
 	PRIMARY KEY (photo_id),
-	UNIQUE KEY name (name),
+	UNIQUE KEY title (title),
 	KEY group_id (group_id)
 ) ENGINE=MyISAM";
 
