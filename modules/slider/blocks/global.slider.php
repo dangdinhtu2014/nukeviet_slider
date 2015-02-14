@@ -106,11 +106,27 @@ if( ! nv_function_exists( 'content_slider' ) )
 		$mod_file = $site_mods[$module]['module_file'];
 		
 		$block_config['numrow'] = ( $block_config['numrow'] != 0 ) ? $block_config['numrow'] : 10;
-
-		$sql = 'SELECT photo_id, title, sub_title, alias, intro, links, image, thumb, background FROM ' . NV_PREFIXLANG . '_' . $mod_data . '_photo WHERE group_id=' . $block_config['group_id'] . ' AND status = 1 ORDER BY weight ASC LIMIT 0 , ' . $block_config['numrow'];
-
-		$array_photo = nv_db_cache( $sql, 'photo_id' . '_' . $block_config['group_id'] . '_' . $block_config['numrow'], $module );
 		
+		$array_photo = array();
+		$cache_file = NV_LANG_DATA . '_'. $block_config['template'] .'_photo_' . $block_config['group_id'] . '_' . $block_config['numrow'] . '_' . NV_CACHE_PREFIX . '.cache';
+		if( ( $cache = nv_get_cache( $module, $cache_file ) ) != false )
+		{
+			$array_photo = unserialize( $cache );
+		}
+		else
+		{
+
+			$sql = 'SELECT photo_id, title, sub_title, alias, intro, links, image, thumb, background FROM ' . NV_PREFIXLANG . '_' . $mod_data . '_photo WHERE group_id=' . $block_config['group_id'] . ' AND status = 1 ORDER BY weight ASC LIMIT 0 , ' . $block_config['numrow'];
+			$result = $db->query( $sql );
+			while( $rows = $result->fetch() )
+			{
+				$array_photo[] = $rows;
+			}
+			$result->closeCursor();
+		
+			$cache = serialize( $array_photo );
+			nv_set_cache( $module, $cache_file, $cache );
+		}
 		if( !empty( $array_photo ) )
 		{
 			if( file_exists( NV_ROOTDIR . '/themes/' . $module_info['template'] . '/modules/' . $mod_file . '/block.' . $block_config['template'] . '.tpl' ) )
