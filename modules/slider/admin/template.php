@@ -312,7 +312,6 @@ $xtpl->assign( 'NV_OP_VARIABLE', NV_OP_VARIABLE );
 $xtpl->assign( 'OP', $op );
 $xtpl->assign( 'MODULE_FILE', $module_file );
 $xtpl->assign( 'MODULE_NAME', $module_name );
-$xtpl->assign( 'DATA', $data );
 $xtpl->assign( 'TOKEN', md5( $global_config['sitekey'] . session_id() ) );
 
 $order2 = ( $order == 'asc' ) ? 'desc' : 'asc';
