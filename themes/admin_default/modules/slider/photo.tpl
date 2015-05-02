@@ -20,7 +20,7 @@
 					<form action="{NV_BASE_ADMINURL}index.php" method="get">
 					<input type="hidden" name ="{NV_NAME_VARIABLE}"value="{MODULE_NAME}" />
 					<input type="hidden" name ="{NV_OP_VARIABLE}"value="{OP}" />
-					<div class="col-sm-6">
+					<div class="col-sm-12">
 						<div class="form-group">
 							<label class="control-label" for="input-photo-title">{LANG.photo_title}</label>
 							<input type="text" name="filter_title" value="{DATA.filter_title}" placeholder="{LANG.photo_title}" id="input-photo-title" class="form-control" autocomplete="off">
@@ -30,7 +30,7 @@
 							<input type="text" name="filter_date_added" value="{DATA.filter_date_added}" placeholder="{LANG.column_date_added}" id="input-date-added" class="form-control"> 
 						</div>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-12">
 						<div class="form-group">
 							<label class="control-label" for="input-status">{LANG.photo_status}</label>
 							<select name="filter_status" id="input-status" class="form-control">
@@ -54,12 +54,12 @@
 						<thead>
 							<tr>
 								<td class="col-md-0 text-center" ><input type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', this.checked);"></td>
-								<td class="col-md-3 text-left"><a href="{URL_TITLE}">{LANG.photo_title}</a> </td>
- 								<td class="col-md-4 text-center"> <strong>{LANG.photo_image} </strong></td>
-								<td class="col-md-1 text-center"> <strong>{LANG.photo_status} </strong></td>
-								<td class="col-md-1 text-center"> <strong>{LANG.photo_date_added} </strong></td>
-								<td class="col-md-1 text-center" ><a href="{URL_WEIGHT}">{LANG.weight}</a></td>
-								<td class="col-md-2 text-right"> <strong>{LANG.action} </strong></td>
+								<td class="col-md-6 text-left"><a href="{URL_TITLE}">{LANG.photo_title}</a> </td>
+ 								<td class="col-md-8 text-center"> <strong>{LANG.photo_image} </strong></td>
+								<td class="col-md-2 text-center"> <strong>{LANG.photo_status} </strong></td>
+								<td class="col-md-2 text-center"> <strong>{LANG.photo_date_added} </strong></td>
+								<td class="col-md-2 text-center" ><a href="{URL_WEIGHT}">{LANG.weight}</a></td>
+								<td class="col-md-4 text-right"> <strong>{LANG.action} </strong></td>
 							</tr>
 						</thead>
 						<tbody>

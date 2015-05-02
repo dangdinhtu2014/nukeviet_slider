@@ -13,25 +13,19 @@
 
 /** RESET AND LAYOUT
 ===================================*/
-#bx-pager{text-align: center; margin: 10px 0}
+
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto;
+	margin: 10px 0 0px 0;
 	padding: 0;
 	*zoom: 1;
-	text-align: center
 }
 
 .bx-wrapper img {
 	max-width: 100%;
-	max-height: 500px;
-	display: inline-table;
-	text-align: center
+	display: block;
 }
-.bx-viewport ul {
-  margin: 0;
-  padding: 0;
-}
+
 /** THEME
 ===================================*/
 
@@ -79,7 +73,8 @@
 	font-family: Arial;
 	font-weight: bold;
 	color: #666;
-	padding-top: 20px;
+	/* padding-top: 20px; */
+	display: none;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
@@ -135,7 +130,7 @@
 	width: 32px;
 	height: 32px;
 	text-indent: -9999px;
-	z-index: 9999;
+	z-index: 1;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
@@ -208,9 +203,7 @@
 	font-size: .85em;
 	padding: 10px;
 }
-.bxslider li {
-	display: none
-}
-.bxslider li:first-child {
-	display: block;
-}
+
+@media  (min-width: 1200px) { .bx-wrapper, .bx-viewport, .bx-wrapper img {height: 300px !important;} }
+/*fix image width*/
+.bxslider{padding-left:0}

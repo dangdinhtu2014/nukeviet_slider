@@ -25,8 +25,8 @@
 		<div class="panel-body">
 			<form action="" method="post" enctype="multipart/form-data" id="form-group" class="form-horizontal">
 				<div class="form-group required">
-					<label class="col-sm-2 control-label" for="input-title">{LANG.photo_title}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-title">{LANG.photo_title}</label>
+					<div class="col-sm-20">
 						<input type="text" name="title" value="{DATA.title}" placeholder="{LANG.photo_title}" id="input-title" class="form-control" />
 						<!-- BEGIN: error_title -->
 						<div class="text-danger">{error_title}</div>
@@ -34,15 +34,15 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-sub-title">{LANG.photo_sub_title}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-sub-title">{LANG.photo_sub_title}</label>
+					<div class="col-sm-20">
 						 <input type="text" name="sub_title" value="{DATA.sub_title}" placeholder="{LANG.photo_sub_title}" id="input-sub-title" class="form-control" />
 					</div>
 				</div>	 
 				
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-alias">{LANG.photo_alias}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-alias">{LANG.photo_alias}</label>
+					<div class="col-sm-20">
 						<div class="input-group">
 							<input class="form-control" name="alias" placeholder="{LANG.photo_alias}" type="text" value="{DATA.alias}" maxlength="255" id="input-alias" />
 							<div class="input-group-addon fixaddon" data-toggle="tooltip" title="{LANG.create_alias}">
@@ -52,8 +52,8 @@
 					</div>
 				</div>
 				<div class="form-group">
-                    <label class="col-sm-2 control-label" for="image">{LANG.photo_image} </label>
-                    <div class="col-sm-10">
+                    <label class="col-sm-4 control-label" for="image">{LANG.photo_image} </label>
+                    <div class="col-sm-20">
 						<div class="input-group">
 							<input class="form-control" type="text" name="image" id="image" value="{DATA.image}" placeholder="{LANG.photo_image}"  />
 							<span class="input-group-btn" >
@@ -63,8 +63,8 @@
                     </div>
                 </div>
 				<div class="form-group">
-                    <label class="col-sm-2 control-label" for="input-background">{LANG.photo_background} </label>
-                    <div class="col-sm-10">
+                    <label class="col-sm-4 control-label" for="input-background">{LANG.photo_background} </label>
+                    <div class="col-sm-20">
 						<div class="input-group">
 							<input class="form-control" type="text" name="background" id="background" value="{DATA.background}" placeholder="{LANG.photo_background}"  />
 							<span class="input-group-btn"  >
@@ -75,8 +75,8 @@
                 </div>
 				
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-links"><span data-toggle="tooltip" title="{LANG.photo_links_help}">{LANG.photo_links}</span></label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-links"><span data-toggle="tooltip" title="{LANG.photo_links_help}">{LANG.photo_links}</span></label>
+					<div class="col-sm-20">
 						<input type="text" name="links" value="{DATA.links}" placeholder="{LANG.photo_links}" id="input-links" class="form-control" />
 						<!-- BEGIN: error_links -->
 						<div class="text-danger">{error_links}</div>
@@ -84,8 +84,8 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-group">{LANG.photo_group}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-group">{LANG.photo_group}</label>
+					<div class="col-sm-20">
 						<select name="group_id" id="input-group" class="form-control">
 							<!-- BEGIN: group -->
 							<option value="{GROUP.key}" {GROUP.selected}>{GROUP.name}</option>
@@ -94,22 +94,22 @@
  					</div>
 				</div>	 
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-intro">{LANG.photo_intro}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-intro">{LANG.photo_intro}</label>
+					<div class="col-sm-20">
 						 <textarea name="intro" rows="2" col="3" id="input-intro" placeholder="{LANG.photo_intro}" class="form-control">{DATA.intro}</textarea>
 						 
 					</div>
 				</div>	 
 				
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-description">{LANG.photo_description}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-description">{LANG.photo_description}</label>
+					<div class="col-sm-20">
 						 {DATA.description}
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-keyword"> {GLANG.groups_view}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-keyword"> {GLANG.groups_view}</label>
+					<div class="col-sm-20">
 						<!-- BEGIN: groups_view -->
 
 						<label>
@@ -119,8 +119,8 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-status">{LANG.photo_status}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-status">{LANG.photo_status}</label>
+					<div class="col-sm-20">
 						<select name="status" id="input-status" class="form-control">
 							<!-- BEGIN: status -->
 							<option value="{STATUS.key}" {STATUS.selected}>{STATUS.name}</option>

@@ -27,8 +27,8 @@
 		<div class="panel-body">
 			<form action="" method="post" enctype="multipart/form-data" id="form-group" class="form-horizontal">
 				<div class="form-group required">
-					<label class="col-sm-2 control-label" for="input-name">{LANG.group_name}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-name">{LANG.group_name}</label>
+					<div class="col-sm-20">
 						<input type="text" name="name" value="{DATA.name}" placeholder="{LANG.group_name}" id="input-name" class="form-control" />
 						<!-- BEGIN: error_name -->
 						<div class="text-danger">{error_name}</div>
@@ -36,8 +36,8 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-alias">{LANG.group_alias}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-alias">{LANG.group_alias}</label>
+					<div class="col-sm-20">
 						<div class="input-group">
 							<input class="form-control" name="alias" placeholder="{LANG.group_alias}" type="text" value="{DATA.alias}" maxlength="255" id="input-alias" />
 							<div class="input-group-addon fixaddon" data-toggle="tooltip" title="{LANG.create_alias}">
@@ -47,8 +47,8 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-description">{LANG.group_description}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-description">{LANG.group_description}</label>
+					<div class="col-sm-20">
 						<input type="text" name="description" value="{DATA.description}" placeholder="{LANG.group_description}" id="input-description" class="form-control" />
 						<!-- BEGIN: error_description -->
 						<div class="text-danger">{error_description}</div>
@@ -56,8 +56,8 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-keyword"> {GLANG.groups_view}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-keyword"> {GLANG.groups_view}</label>
+					<div class="col-sm-20">
 						<!-- BEGIN: groups_view -->
 
 						<label>
@@ -67,8 +67,8 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-2 control-label" for="input-status">{LANG.group_status}</label>
-					<div class="col-sm-10">
+					<label class="col-sm-4 control-label" for="input-status">{LANG.group_status}</label>
+					<div class="col-sm-20">
 						<select name="status" id="input-status" class="form-control">
 							<!-- BEGIN: status -->
 							<option value="{STATUS.key}" {STATUS.selected}>{STATUS.name}</option>

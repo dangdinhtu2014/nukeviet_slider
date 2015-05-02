@@ -569,6 +569,7 @@ h3.subtitle-slider2 {
   -ms-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
+  padding-top: 20px
 }
 .animate-in h3.subtitle-slider2 {
   left: 50%;

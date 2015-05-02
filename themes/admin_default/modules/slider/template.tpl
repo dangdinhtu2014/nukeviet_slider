@@ -20,10 +20,10 @@
 						<thead>
 							<tr>
 								<td class="col-md-0 text-center" ><input type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', this.checked);"></td>
-								<td class="col-md-8 text-left"><a href="{URL_NAME}">{LANG.template_name}</a> </td>
- 								<td class="col-md-1 text-center"> <strong>{LANG.template_status} </strong></td>
-								<td class="col-md-1 text-center"> <strong>{LANG.template_date_added} </strong></td>
- 								<td class="col-md-2 text-right"> <strong>{LANG.action} </strong></td>
+								<td class="col-md-16 text-left"><a href="{URL_NAME}">{LANG.template_name}</a> </td>
+ 								<td class="col-md-2 text-center"> <strong>{LANG.template_status} </strong></td>
+								<td class="col-md-2 text-center"> <strong>{LANG.template_date_added} </strong></td>
+								<td class="col-md-4 text-right"> <strong>{LANG.action} </strong></td>
 							</tr>
 						</thead>
 						<tbody>
@@ -53,7 +53,7 @@
 			</form>
 			<!-- BEGIN: generate_page -->
 			<div class="row">
-				<div class="col-sm-12 text-left">
+				<div class="col-sm-24 text-left">
 				
 				<div style="clear:both"></div>
 				{GENERATE_PAGE}

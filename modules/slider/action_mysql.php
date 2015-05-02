@@ -64,4 +64,6 @@ $sql_create_module[] = "CREATE TABLE " . $db_config['prefix'] . "_" . $lang . "_
 ) ENGINE=MyISAM"; 
 
 $sql_create_module[] = "INSERT INTO " . $db_config['prefix'] . "_" . $lang . "_" . $module_data . "_template VALUES(NULL, 'slider', 1, ". NV_CURRENTTIME .")"; 
+$sql_create_module[] = "INSERT INTO " . $db_config['prefix'] . "_" . $lang . "_" . $module_data . "_template VALUES(NULL, 'bxslider', 1, ". NV_CURRENTTIME .")"; 
+$sql_create_module[] = "INSERT INTO " . $db_config['prefix'] . "_" . $lang . "_" . $module_data . "_template VALUES(NULL, 'nivo_slider', 1, ". NV_CURRENTTIME .")"; 
  
